@@ -16,8 +16,7 @@ public class Order {
         this.quantity = quantity;
         this.orderDate = orderDate;
     }
-
-    // Getters and setters
+    
     public int getId() {
         return id;
     }
