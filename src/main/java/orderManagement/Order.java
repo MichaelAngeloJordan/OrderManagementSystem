@@ -16,7 +16,7 @@ public class Order {
         this.quantity = quantity;
         this.orderDate = orderDate;
     }
-    
+
     public int getId() {
         return id;
     }
