@@ -9,18 +9,13 @@ public class OrderDataBaseConfig {
     private static final String USER = "root";
     private static final String PASSWORD = "Untar123456";
 
-    /**
-     * Mendapatkan koneksi ke database dan menampilkan status koneksi.
-     *
-     * @return Connection - objek koneksi ke database
-     */
     public static Connection getConnection() {
         try {
             Connection connection = DriverManager.getConnection(URL, USER, PASSWORD);
-            System.out.println("Connection is fully connected!");
+            System.out.println("Connection Updated");
             return connection;
         } catch (SQLException e) {
-            System.out.println("Connection is unsuccessful: " + e.getMessage());
+            System.out.println("Connection is unsuccessful" + e.getMessage());
             return null;
         }
     }
