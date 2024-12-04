@@ -15,7 +15,7 @@ public class OrderDataBaseConfig {
             System.out.println("Connection Updated");
             return connection;
         } catch (SQLException e) {
-            System.out.println("Connection is unsuccessful" + e.getMessage());
+            System.out.println(e.getMessage());
             return null;
         }
     }
